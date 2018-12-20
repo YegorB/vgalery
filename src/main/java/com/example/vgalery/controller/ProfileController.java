@@ -1,7 +1,6 @@
 package com.example.vgalery.controller;
 
 import com.example.vgalery.model.Profile;
-import com.example.vgalery.repository.ProfileRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,6 +14,7 @@ import java.util.Optional;
 @RestController
 public class ProfileController {
 
+/*
     @Autowired
     private ProfileRepository profileRepository;
 
@@ -27,5 +27,6 @@ public class ProfileController {
     public Profile createProfile(@Valid @RequestBody Profile profile) {
         return profileRepository.save(profile);
     }
+*/
 
 }

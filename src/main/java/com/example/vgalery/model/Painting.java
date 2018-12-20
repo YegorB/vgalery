@@ -1,17 +1,25 @@
 package com.example.vgalery.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import org.hibernate.annotations.OnDelete;
-import org.hibernate.annotations.OnDeleteAction;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
-
-@Entity
-@Table(name = "paintings")
+//@Entity
+//@Table(name = "paintings")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Painting extends AuditModel {
 
+    private Long id;
+
+    private String description;
+
+    private String image;
+
+    private String title;
+
+/*
     @Id
     @GeneratedValue(generator = "painting_generator")
     @SequenceGenerator(
@@ -75,5 +83,5 @@ public class Painting extends AuditModel {
 
     public void setUrl(String url) {
         this.url = url;
-    }
+    }*/
 }

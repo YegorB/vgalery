@@ -1,19 +1,10 @@
 package com.example.vgalery.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.SequenceGenerator;
-import javax.persistence.Table;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
-
-@Entity
-@Table(name = "profiles")
+//@Entity
+//@Table(name = "profiles")
 public class Profile extends AuditModel {
 
-    @Id
+/*    @Id
     @GeneratedValue(generator = "profile_generator")
     @SequenceGenerator(
             name = "profile_generator",
@@ -51,5 +42,5 @@ public class Profile extends AuditModel {
 
     public void setUsername(String username) {
         this.username = username;
-    }
+    }*/
 }
