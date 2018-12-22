@@ -29,7 +29,7 @@ import java.util.List;
 import java.util.Random;
 
 @RestController
-@CrossOrigin(origins = "http://vgallery-ui.appspot.com/")
+@CrossOrigin(origins = {"https://vgallery-ui.appspot.com", "http://localhost:3000"})
 public class PaintingController {
 
 /*
